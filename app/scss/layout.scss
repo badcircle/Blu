@@ -1,0 +1,23 @@
+#header {
+  background: #152C39;
+  border-top-width: 11px;
+  border-top-color: #2E71B6;
+  border-top-style: solid;
+  @include breakpoint(small down) {
+    text-align: center;
+  }
+  .logo {
+    position: relative;
+    left: -110px;
+    @include breakpoint(small down) {
+      position: initial;
+      left: 0;
+      margin: 2rem auto;
+    }
+  }
+  ul.menu {
+    li a {
+      font-size: 1.2rem;
+    }
+  }
+}
