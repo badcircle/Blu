@@ -3,6 +3,11 @@
   border-top-width: 11px;
   border-top-color: #2E71B6;
   border-top-style: solid;
+  background-image: url(../../src/hero_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 700px;
   @include breakpoint(small down) {
     text-align: center;
   }
@@ -15,9 +20,83 @@
       margin: 2rem auto;
     }
   }
-  ul.menu {
-    li a {
-      font-size: 1.2rem;
+  #navigation {
+    position: absolute;
+    bottom: 0;
+    ul.menu {
+      @include breakpoint(small down) {
+        display: block;
+      }
+      li {
+        @include breakpoint(small down) {
+          display: block;
+          margin-top: 1px;
+        }
+        a {
+          color: #fff;
+          font-size: 1.4rem;
+          background-color: rgba(21, 44, 57, .75);
+          @include breakpoint(medium down) {
+            font-size: 1.1rem;
+          }
+          @include breakpoint(small down) {
+            display: block;
+          }
+        }
+        a:hover {
+          background-color: rgba(21, 44, 57, .45);
+        }
+      }
     }
+  }
+}
+
+#hero {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin: 3rem 0;
+    font-family: Georgia, Times, serif;
+    color: #2E71B6;
+    letter-spacing: -1px;
+    span {
+      box-shadow: 0 11px 0 0 #2E71B6;
+    }
+    @include breakpoint(small down) {
+      font-size: 1.6rem;
+    }
+  }
+  p {
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    color: #222;
+  }
+}
+
+#options {
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  .cell {
+    text-align: center;
+  }
+  .buy {
+    background-color: #152C39;
+  }
+  .sell {
+    background-color: #2E71B6;
+  }
+  .mls_search {
+    background-color: #777;
+  }
+  a {
+    color: #fff;
+    padding: 2rem;
+    display: block;
+  }
+  a:hover, a:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
