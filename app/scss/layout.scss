@@ -51,7 +51,7 @@
   &.home { background-image: url(../../src/hero_image.jpg); }
   &.buy { background-image: url(../../src/newbuybg.jpg); }
   &.sell { background-image: url(../../src/sellbg.jpg); }
-  &.agents { background-image: url(../../src/hero_image.jpg); }
+  &.agents { background-image: url(../../src/agentsbg.jpg); }
   &.investors { background-image: url(../../src/hero_image.jpg); }
 }
 
@@ -190,6 +190,27 @@ div.stat {
   }
 }
 
+// pullquote
+.pullquote {
+  background-color: #152C39;
+  color: #fff;
+  margin-top: 3rem;
+  padding: 1rem;
+  .headline {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #fff;
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: center;
+  }
+  .text {
+    border-top: 1px solid #2E71B6;
+    color: #2E71B6;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 1rem 2rem 6rem 2rem; 
+  }
+}
 // buy form
 #form_buy {
   font-size: 1.4rem;
@@ -235,3 +256,28 @@ div.stat {
   line-height: 1rem;
   font-style: italic;
 }
+
+// agents
+#agents {
+  margin-top: 3rem;
+}
+.agent {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  background-position: right bottom;
+  border-bottom: 11px solid #2E71B6;
+  .name {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  &:hover {
+    border-color: #152C39;
+  }
+}
+#agent1 { background-image: url(../../agents/jdarden.jpg); }
+#agent2 { background-image: url(../../agents/smead.jpg); }
+#agent3 { background-image: url(../../agents/kyoung.jpg); }
+#agent4 { background-image: url(../../agents/logant.jpg); }
+#agent5 { background-image: url(../../agents/bjohnson.jpg); }
+#agent6 { background-image: url(../../agents/stephcasco.jpg); }
