@@ -19,6 +19,27 @@
       margin: 2rem auto;
     }
   }
+  #secondary_navigation {
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    ul.menu li {
+      margin-left: 1rem;
+      a {
+        background-color: #fff;
+        background-color: rgba(46, 113, 182, 0.1);
+        border: 1px solid #2e71b6;
+        color: #fff;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+        padding: 0.5rem 1rem;
+        &:hover {
+          background-color: rgba(46, 113, 182, 1);
+        }
+      }
+    }
+  }
   #navigation {
     position: absolute;
     bottom: 0;
@@ -33,10 +54,10 @@
         }
         a {
           color: #fff;
-          font-size: 1.4rem;
+          font-size: 2rem;
           background-color: rgba(21, 44, 57, .90);
           @include breakpoint(medium down) {
-            font-size: 1.1rem;
+            font-size: 1.4rem;
           }
           @include breakpoint(small down) {
             display: block;
@@ -52,7 +73,10 @@
   &.buy { background-image: url(../../src/newbuybg.jpg); }
   &.sell { background-image: url(../../src/sellbg.jpg); }
   &.agents { background-image: url(../../src/agentsbg.jpg); }
-  &.investors { background-image: url(../../src/hero_image.jpg); }
+  &.contact { background-image: url(../../src/contact.jpg); }
+  &.investors { background-image: url(../../src/investorsbg.jpg); }
+  &.careers { background-image: url(../../src/sellbg.jpg); }
+  &.about { background-image: url(../../src/aboutbg.jpg); }
 }
 
 #hero {
@@ -119,11 +143,24 @@ h3 {
   padding-bottom: 6rem;
   color: #fff;
   font-size: .85rem;
+  line-height: 1.4rem;
   box-shadow: inset 0 7px 11px 0 rgba(0,0,0,0.15);
+  ul.menu a {
+    color: #fff;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
   .logo {
     @include breakpoint(small down) {
       text-align: center;
       margin-bottom: 3rem;
+    }
+  }
+  .footer_menu {
+    text-align: center;
+    @include breakpoint(small down) {
+      text-align: left;
     }
   }
   .email {
@@ -135,7 +172,7 @@ h3 {
     }
   }
   .address {
-
+    text-align: right;
   }
 }
 
@@ -187,6 +224,16 @@ div.stat {
 .medium-center {
   @include breakpoint(medium down) {
     text-align: center;
+  }
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include breakpoint(small down) {
+    position: initial;
+    transform: none;
   }
 }
 
@@ -259,7 +306,7 @@ div.stat {
 
 // agents
 #agents {
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .agent {
   background-repeat: no-repeat;
@@ -281,3 +328,44 @@ div.stat {
 #agent4 { background-image: url(../../agents/logant.jpg); }
 #agent5 { background-image: url(../../agents/bjohnson.jpg); }
 #agent6 { background-image: url(../../agents/stephcasco.jpg); }
+
+#qualities {
+  background-color: #eee;
+  padding: 3rem;
+  @include breakpoint(medium down) {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+.work-from-home {
+  background-color: #152C39;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+ul#values {
+  li {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: bold;
+    color: #2E71B6;
+  }
+}
+.surroundquote {
+  padding: 2rem;
+  border: 1px solid #2E71B6;
+  color: #2E71B6 !important;
+}
+.large_offset_inline {
+  position: relative;
+  @include breakpoint(small down) {
+    // position: initial;
+    // left: 0 !important;
+    // top: 0 !important;
+  }
+}
