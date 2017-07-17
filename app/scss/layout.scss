@@ -37,7 +37,7 @@
           font-size: 1.4rem;
           background-color: rgba(21, 44, 57, .75);
           @include breakpoint(medium down) {
-            font-size: 1.1rem;
+            font-size: 1rem;
           }
           @include breakpoint(small down) {
             display: block;
@@ -52,10 +52,12 @@
 }
 
 #hero {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   h2 {
     font-size: 2.5rem;
     line-height: 3.5rem;
-    margin: 3rem 0;
+    margin: 0 0 3rem 0;
     font-family: Georgia, Times, serif;
     color: #2E71B6;
     letter-spacing: -1px;
@@ -64,12 +66,17 @@
     }
     @include breakpoint(small down) {
       font-size: 1.6rem;
+      line-height: 2.5rem;
     }
   }
   p {
     line-height: 2.5rem;
     font-size: 1.4rem;
     color: #222;
+    @include breakpoint(small down) {
+      line-height: 2rem;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -99,4 +106,20 @@
     color: #fff;
     background-color: rgba(255, 255, 255, 0.1);
   }
+}
+
+// IDX
+#IDX-qsSubmit-29831 {
+  padding-top: 0.675rem;
+  padding-bottom: 0.675rem;
+}
+#IDX-mapTab-criteria-22107 {
+  float: none;
+  border-radius: 0;
+  border: 0;
+  color: #777;
+  padding: 1rem 0;
+}
+#IDX-mapHeader-Search-22107 {
+  height: auto !important;
 }
