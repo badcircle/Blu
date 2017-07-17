@@ -57,11 +57,8 @@
           font-size: 2rem;
           background-color: rgba(21, 44, 57, .90);
           @include breakpoint(medium down) {
-<<<<<<< HEAD
             font-size: 1rem;
-=======
             font-size: 1.4rem;
->>>>>>> bbe87ffaca6917a702afcb3a04df7355e3be9ae9
           }
           @include breakpoint(small down) {
             display: block;
@@ -103,9 +100,7 @@
     }
   }
   p {
-=======
   p, li {
->>>>>>> bbe87ffaca6917a702afcb3a04df7355e3be9ae9
     line-height: 2.5rem;
     font-size: 1.4rem;
     color: #222;
